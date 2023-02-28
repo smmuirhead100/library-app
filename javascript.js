@@ -22,15 +22,14 @@ function displayBooks() {
     }
 }
 
+const displayBooksBtn = document.querySelector('#displayBooks');
+
+displayBooksBtn.addEventListener('click', () => {displayBooks()})
 
 
 
-
-
-// TESTS
+// TESTSs
 
 habits = new Book('Atomic Habits', 'James Clear', 292, true)
 richDad = new Book('Rich Dad Poor Dad', 'Robert T.', 180, true)
 console.log(habits.info())
-
-displayBooks()
