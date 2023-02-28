@@ -15,20 +15,22 @@ function Book(title, author, pages, read) {
 function addBookToLibrary() {
 }
 
-
+// Display Books Function
+const bookDisplay = document.querySelector('.books');
 function displayBooks() {
     for (let i = 0; i < myLibrary.length; i++) {
-        console.log(myLibrary[i])
+        div = document.createElement('div')
+        div.textContent += myLibrary[i];
+        bookDisplay.appendChild(div);
     }
 }
 
 const displayBooksBtn = document.querySelector('#displayBooks');
-
-displayBooksBtn.addEventListener('click', () => {displayBooks()})
-
+displayBooksBtn.addEventListener('click', () => {displayBooks()}, {once : true})
 
 
-// TESTSs
+
+// TESTS
 
 habits = new Book('Atomic Habits', 'James Clear', 292, true)
 richDad = new Book('Rich Dad Poor Dad', 'Robert T.', 180, true)
