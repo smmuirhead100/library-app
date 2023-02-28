@@ -6,3 +6,18 @@
     background-color: lightblue;
 
 }
+
+.newBook {
+    display: none;
+    position: absolute;
+    background-color: blanchedalmond;
+    padding: 10px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    max-width: 300PX;
+
+}

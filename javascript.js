@@ -20,7 +20,7 @@ const bookDisplay = document.querySelector('.books');
 function displayBooks() {
     for (let i = 0; i < myLibrary.length; i++) {
         div = document.createElement('div')
-        div.textContent += myLibrary[i];
+        div.textContent = myLibrary[i];
         bookDisplay.appendChild(div);
     }
 }
@@ -28,8 +28,19 @@ function displayBooks() {
 const displayBooksBtn = document.querySelector('#displayBooks');
 displayBooksBtn.addEventListener('click', () => {displayBooks()}, {once : true})
 
+// Add new book function 
 
+function displayNewBookForm() {
+    var  newBook = document.querySelector(".newBook");
+    if (newBook.style.display === "none") {
+      newBook.style.display = "grid";
+    } else {
+      newBook.style.display = "none";
+    }
+  }
 
+const newBookBtn = document.querySelector('#newBook');
+newBookBtn.addEventListener('click', () => {displayNewBookForm()})
 // TESTS
 
 habits = new Book('Atomic Habits', 'James Clear', 292, true)
