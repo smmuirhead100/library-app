@@ -41,6 +41,13 @@ function displayNewBookForm() {
 
 const newBookBtn = document.querySelector('#newBook');
 newBookBtn.addEventListener('click', () => {displayNewBookForm()})
+
+// Change back after submitting
+
+const newBookSubmit = document.querySelector('#newBookSubmit');
+newBookSubmit.addEventListener('click', () => {displayNewBookForm})
+
+
 // TESTS
 
 habits = new Book('Atomic Habits', 'James Clear', 292, true)

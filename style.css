@@ -19,5 +19,18 @@
     right: 0;
     text-align: center;
     max-width: 300PX;
+    align-items: center;
+    gap: 5px;
+}
 
+.newBook #newBookSubmit {
+    height: 125%;
+    background-color: lightgreen;
+    border: none;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.newBook #newBookSubmit:hover {
+    padding: 2px;
 }
